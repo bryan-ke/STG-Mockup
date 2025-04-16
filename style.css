@@ -1,0 +1,124 @@
+* {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: azure;
+}
+
+body {
+    background-image: url(assets/images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 100px 400px 200px;
+    gap: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: #381A23;
+    border-radius: 25px;
+    grid-column: span 2;
+    display: inline-flex;
+    width: 100%;
+}
+
+.header > h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25px;
+    width: 50%;
+    font-size: 2em;
+}
+
+.header > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    font-size: 1.5em;
+}
+
+li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:inherit
+    grid-column: span 1.5;
+    grid-row: span 5;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.septic {
+    width: 550px;
+}
+
+
+.line {
+    grid-row: span 1;
+}
+
+h3 {
+    font-family: cursive;
+    font-size: 3.5em;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    grid-row: span 4;
+    background-color: #A76545;
+    border-radius: 25px;
+    width: 75%;
+}
+
+.button {
+    height: 35px;
+    width: 125px;
+    font-size: .8em;
+    font-weight: 700;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.button:hover {
+    transition-duration: 0.4s;
+    background-color: crimson;
+    height: 50px;
+    width: 145px;
+}
+
+.details {
+    background-color: black;
+    grid-column: span 2;
+    grid-row: span 3;
+    margin-top: 10px;
+}
